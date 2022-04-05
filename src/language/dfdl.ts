@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Console } from 'console';
+
 import * as vscode from 'vscode'
 
 export function activate(context: vscode.ExtensionContext) {
@@ -190,7 +190,7 @@ export function activate(context: vscode.ExtensionContext) {
         //commandCompletion.command = { command: 'editor.action.triggerSuggest', title: 'Re-trigger completions...' };
 
         // return all completion items as array
-        console.log('in elementCompletionProvider: returning completion items as array');
+        console.log('in elementCompletionProvider: returning completion items as array ' + new Date().toLocaleString());
         return [
           xmlVersion,
           xsSchema,
